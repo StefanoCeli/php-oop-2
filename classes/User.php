@@ -67,7 +67,7 @@
             return $this->cart;
         }
         public function getInfoUser(){
-           return "Nome: " . $this->name .", cognome:  " . $this->lastname .", email: " .$this->email ."scadenza carta : ". $this->getExpirationDate() .", carrello : " . $this->getCart();
+           return "Nome: " . $this->name .", cognome:  " . $this->lastname .", email: " .$this->email .", numero carta: ". $this->num_card .", cvv: " . $this->cvv .", scadenza carta : ". $this->getExpirationDate() .", carrello : " . $this->getCart();
         }
 
     }
