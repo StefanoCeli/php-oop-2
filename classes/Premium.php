@@ -1,8 +1,10 @@
 <?php 
     require_once __DIR__ ."/User.php";
 
-    class Premium extends user{
+    require_once __DIR__ . "/CreditCard.php";
 
+    class Premium extends user{
+        use CreditCard;
         private $fidelity_card;
         private $points_premium;
 
@@ -36,7 +38,7 @@
         }
 
         public function getInfoPremium(){
-            return "Nome: " . $this->name .", cognome:  " . $this->lastname .", email: " .$this->email .", carrello : " . $this->getCart() . ", numero carta fedeltà : " . $this->getFidelityCard() . ", punti premium: " . $this->getPointsPremium();
+            return "Nome: " . $this->name .", cognome:  " . $this->lastname .", email: " .$this->email .", numero carta: ". $this->num_card .", cvv: " . $this->cvv .", scadenza carta : ". $this->getExpirationDate() .", carrello : " . $this->getCart() . ", numero carta fedeltà : " . $this->getFidelityCard() . ", punti premium: " . $this->getPointsPremium();
          }
     }
 
