@@ -47,16 +47,17 @@
 </head>
 <body>
     
-    <h1><?php echo $user1->getInfoUser() ?></h1>
-    <h1><?php echo $user2->getInfoUser() ?></h1>
-    <hr>
+    <h1>Lista utenti</h1>
+    <ul><?php echo $user1->getInfoUser() ?></ul>
+    <ul><?php echo $user2->getInfoUser() ?></ul>
+    
     <h1>Lista utenti premium</h1>
-    <h1><?php echo $user3->getInfoPremium() ?></h1>
-    <hr>
+    <ul><?php echo $user3->getInfoPremium() ?></ul>
+    
     <h1>Prodotti in offerta</h1>
-    <h1><?php echo $product1->getInfoProduct() ?></h1>
-    <h1><?php echo $product2->getInfoProduct() ?></h1>
-    <h1><?php echo $product3->getInfoProduct() ?></h1>
+    <ul><?php echo $product1->getInfoProduct() ?></ul>
+    <ul><?php echo $product2->getInfoProduct() ?></ul>
+    <ul><?php echo $product3->getInfoProduct() ?></ul>
 
 </body>
 </html>

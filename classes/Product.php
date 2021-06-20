@@ -9,7 +9,7 @@
 
         public function getInfoProduct(){
             
-            return "Nome Prodotto : " . $this->name .", ean: " . $this->ean .", prezzo: " . $this->price ."€, descrizione: " . $this->description;
+            return "<li> Nome Prodotto : " . $this->name ."</li> <li> Ean: " . $this->ean ."</li> <li> Prezzo: " . $this->price ."€ </li> <li> Descrizione: " . $this->description . "</li>";
     
         }
     }
